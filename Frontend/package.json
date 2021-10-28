@@ -4,8 +4,18 @@
   "description": "Django and Modern JS Libraries - React",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "start": "webpack-dev-server --open --hot --mode development",
+    "build": "webpack --mode production"
+    },
+    "babel": {
+      "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+        ]
+     },
+    "postcss": {
+      "plugins": { "postcss-preset-env": {} }
+     },
   "author": "Asketsystem",
   "license": "ISC",
   "dependencies": {
