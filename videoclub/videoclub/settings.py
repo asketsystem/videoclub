@@ -39,9 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-     "django_extensions",# New! (useful extension)
+    'django_extensions',# New! (useful extension)
     'graphene_django',  # New! (for graphql communication)
     'corsheaders',      # New! (for cors request in dev env)
+    'items'             # New! (make our app will active)
 ]
 
 # New (for improved interactive shell)
