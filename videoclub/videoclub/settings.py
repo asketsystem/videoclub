@@ -53,6 +53,9 @@ CORS_ORIGIN_WHITELIST = (
     'http://localhost:8080',
 )
 
+# New - Add this part
+GRAPHENE= {'SCHEMA': 'gql.schema.schema'}
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'corsheaders.middleware.CorsMiddleware', # New Add this
